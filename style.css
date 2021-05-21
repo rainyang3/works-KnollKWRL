@@ -241,37 +241,32 @@ h2{
   }
 }
 
-/* CURSOR */
+#links {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 0, 200;
+  font-style: normal;
+  color: white;
+  font-size: 1em;
 
-.cursor-dot,
-.cursor-dot-outline {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out,
-                transform 0.3s ease-in-out;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+        -moz-animation: glow 3s ease-in-out infinite alternate;
+        animation: glow 3s ease-in-out infinite alternate;
 }
 
-.cursor-dot {
+
+
+#anno{
   
-  width: 8px;
-  height: 8px;
-  background-color: rgb(179, 92, 255);
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+        -moz-animation: glow 3s ease-in-out infinite alternate;
+        animation: glow 3s ease-in-out infinite alternate;
 }
 
-.cursor-dot-outline {
-    
-    width: 40px;
-    height: 40px;
-    background-color: rgba(129, 0, 245,.3);
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255,.3), 0 0 20px rgba(255, 255, 255,1) ;
+  }
+  to {
+    text-shadow: 0 0 10px rgba(255, 255, 255,.3);
+  }
 }
-
-html{
-  /* cursor:url(/assets/cursororange.png),auto; */
-  cursor: none;
-}
-
