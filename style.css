@@ -140,7 +140,7 @@ p {
 
 
 .buttonbox {
-  margin-top: 83vh;
+  margin-top: 80vh;
   margin-left: 25px;
   position: fixed;
   z-index: 2;
@@ -150,7 +150,7 @@ p {
   -webkit-text-fill-color: transparent;
         -webkit-text-stroke: .25px white;
         
-        margin-top: 10px;
+        margin-top: 30px;
         background: none;
         border: none;
         font-size: 1.5em;
@@ -269,4 +269,55 @@ h2{
   to {
     text-shadow: 0 0 10px rgba(255, 255, 255,.3);
   }
+}
+
+
+#buttons {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 0, 200;
+  font-style: normal;
+  color: white;
+  font-size: 1.7em;
+  text-decoration: none;
+  transition-property: transform; 
+    Transition-duration:0.5s; 
+    Transition-timing-function:ease-out; 
+    Transition-delay:0.1s
+}
+
+#buttons:hover {
+  transform: scale(1.1);   
+}
+
+/* CURSOR */
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  
+  width: 8px;
+  height: 8px;
+  background-color: rgb(179, 92, 255);
+}
+
+.cursor-dot-outline {
+    
+    width: 40px;
+    height: 40px;
+    background-color: rgba(129, 0, 245,.3);
+}
+html{
+  /* cursor:url(/assets/cursororange.png),auto; */
+  cursor: none;
 }
